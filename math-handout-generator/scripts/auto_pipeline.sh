@@ -63,7 +63,9 @@ if [ "$COMMAND" = "extract" ]; then
     echo "我已经执行了提取。材料存放在 $TEMP_OUT_DIR 。"
     echo "请读取该目录下的 chapter_text_layout.txt (辅助参考)，"
     echo "并根据里面的内容和你的内置知识库，严格按照 SKILL.md 生成"
-    echo "《$KEYWORD》的 Markdown 讲义，保存到 $TEMP_OUT_DIR/$KEYWORD.md"
+    echo "《$KEYWORD》的双版本讲义，保存为："
+    echo "  1. $TEMP_OUT_DIR/${KEYWORD}_教师版.md"
+    echo "  2. $TEMP_OUT_DIR/${KEYWORD}_学生版.md"
     echo "================================================================="
 
 elif [ "$COMMAND" = "publish" ]; then
